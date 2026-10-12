@@ -1,0 +1,21 @@
+name = "mev-protection-scanner"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+account_id = "4dc219a0cfd5b1557c952096faad20c4"
+
+[vars]
+# PUBLIC pay-to address (config var, not a secret; no private keys anywhere)
+ORG_EVM_PAYTO = "0x76EfB727cd3271C7DE22f92437Be212766C9631f"
+X402_NETWORK = "eip155:8453"
+X402_ASSET = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+X402_PRICE = "$0.01"
+
+# RPC URLs (set via wrangler secret put)
+# ETHEREUM_RPC_URL = "https://..."
+# ETHEREUM_WS_URL = "wss://..."  # For mempool monitoring
+
+# API Keys (optional, for enhanced data)
+# INFURA_API_KEY = "..."
+# BLOCKNATIVE_API_KEY = "..."
+# ETHERSCAN_API_KEY = "..."
